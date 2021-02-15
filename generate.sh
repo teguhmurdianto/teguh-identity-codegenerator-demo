@@ -15,3 +15,7 @@ dotnet add package Microsoft.EntityFrameworkCore.InMemory --version 3.1.12
 dotnet add package Microsoft.EntityFrameworkCore.Sqlite --version 3.1.12
 
 dotnet aspnet-codegenerator identity --dbContext ApplicationDbContext --useSqLite --force
+
+dotnet ef migrations add InitiateIdentitySchema
+
+dotnet ef database update
